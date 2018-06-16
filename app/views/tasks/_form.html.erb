@@ -1,5 +1,6 @@
-<div class="row">
-  <div class="col-xs-6">
+<form class="form-horizontal">
+  <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">      
+  
   <%= form_for(task) do |f| %>
   <% if task.errors.any? %>
     <div class="alert alert-warning">
@@ -10,6 +11,8 @@
       </ul>
     </div>
   <% end %>
+  </div>
+</form>
 
   <div class="form-group">
     <%= f.label :task, 'タスク' %>
